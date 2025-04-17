@@ -3,15 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Life Instructions</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        li {
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .button-container {
+            margin-top: 2rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <p>Instructions for life:</p>
+    <div class="container">
+        <h1>Instructions for life:</h1>
+        <ul>
+            <li>Eat</li>
+            <li>Sleep</li>
+            <li>Repeat</li>
+        </ul>
+        <div class="button-container">
+            <button onclick="alert('Enjoy the simple things!')">More Info</button>
+        </div>
+    </div>
 
-<ul>
-  <li>Eat</li>
-  <li>Sleep</li>
-  <li>Repeat</li>
-</ul>
+    <script>
+        // You can add more JavaScript functionality here if needed.
+    </script>
 </body>
 </html>
